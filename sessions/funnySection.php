@@ -67,10 +67,10 @@
             </div>
            
            <div class="container">
-     		 <div class="rightMenu fun" data-text="6" data-image="Fun07">3D character design portfolio.
+     		 <div class="rightMenu site" data-text="6" data-url="dimension3" data-image="Fun07 ">3D character design portfolio.
 			 	<br><a class="imageClick">click please.</a>  
 			 </div>
-          <div class="leftMenu"><input type="image" class="btnOk fun" data-text="6" data-image="Fun07" src="../images/thumbnails/3dscene.jpg"  name="Fun07" width="228" height="120" border="0"/></div>
+          <div class="leftMenu"><input type="image" class="btnOk fun" data-text="6" data-image="Fun07" data-url="dimension3" src="../images/thumbnails/3dscene.jpg"  name="Fun07" width="228" height="120" border="0"  id="dimension3" /></div>
           </div>
     </div>
 </body>

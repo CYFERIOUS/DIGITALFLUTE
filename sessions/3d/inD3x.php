@@ -13,13 +13,9 @@
 </head>
 
 <body>
-<div id="header">
-<div id="menu">
-	<h2>DIGITAL FLUTE 3D PORTFOLIO</h2>
-    <input id="search" style="float:right"type="text" placeholder="search"/>
-</div>
-</div>
-<div id="overlay"></div>
+ <div id="overlay"></div>
+<input id="search" style="float:right; right: 20px" type="text" placeholder="search"/>
+
 
 <div id="frame">
  
@@ -46,10 +42,10 @@
 <div id="wraper">
 <ul id="filter">
 	<li class="active">ALL</li>
-	<li>CYBERPUNK</li>
-	<li>HORROR</li>
-    <li>KIDS</li>
-    <li>ONIRICAL</li>
+	<li>VIDEO GAMES</li>
+	<li>ARCHITECTURE</li>
+    <li>PRODUCT</li>
+    <li>ANIMATION</li>
 </ul>
 <ul id="portfolio">
 	<?php include_once("list.html") ?>
