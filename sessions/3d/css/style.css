@@ -17,10 +17,9 @@ body{
 #frame{
 	display: none;
 	position:fixed;
+	top: 3%;
 	left:50%;
-	background-color:#FFF;
-	width:500px;
-	height:500px;
+
 	margin-left: -250px;
 	padding-top:-20px;
 	padding-bottom:20px;
@@ -68,7 +67,7 @@ body{
 }
 #frame-arrows{
 	position:absolute;
-	width:460px;
+	width:450px;
 	margin-left:20px;
 }
 #right{
@@ -87,7 +86,9 @@ body{
 	height:20px;
 	background-color:#F90;
 }
+
 #filter li{
+	visibility:hidden;
 	display:inline;
 	color:white;
 }
