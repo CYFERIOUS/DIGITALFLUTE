@@ -1,0 +1,25 @@
+{
+  "name": "webgl-study-by-me",
+  "description": "my study about webgl",
+  "main": "index.js",
+  "authors": [
+    "fercho"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "webgl",
+    "javascript",
+    "never",
+    "say",
+    "die"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

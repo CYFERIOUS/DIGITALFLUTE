@@ -57,7 +57,7 @@
 	<div id="Accordion1" class="Accordion" tabindex="0">
 		<div class="AccordionPanel">
 			<div class="AccordionPanelspecialTab">DIE ZAUBERFLÖTE</div>
-			<div class="AccordionPanelspecialContent" id="sektorZero"><iframe  id="firstIntro" src="sessions/intro/index.html"  scrolling="no" frameborder="0" ></iframe></div>
+			<div class="AccordionPanelspecialContent" id="sektorZero"><iframe  id="firstIntro"  src="sessions/intro/index.html"  scrolling="no" frameborder="0" ></iframe></div>
 		</div>
 
 		<div class="AccordionPanel" >

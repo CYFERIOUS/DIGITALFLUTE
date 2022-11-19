@@ -1,0 +1,28 @@
+{
+  "name": "webgl-study-by-me",
+  "version": "1.0.0",
+  "description": "my study about webgl",
+  "main": "index.js",
+  "scripts": {
+    "test": "rungl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CYFERIOUS/webglStudy.git"
+  },
+  "keywords": [
+    "webgl",
+    "javascript",
+    "never",
+    "say",
+    "die"
+  ],
+  "author": "fercho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CYFERIOUS/webglStudy/issues"
+  },
+  "homepage": "https://github.com/CYFERIOUS/webglStudy#readme",
+  "devDependencies": {
+  }
+}

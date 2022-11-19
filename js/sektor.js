@@ -1,6 +1,19 @@
 // JavaScript Document
 
+
 $(function() {
+	
+       function focusIframe(){
+        
+		document.addEventListener('keydown', e => {
+	  		const frame =  document.getElementById("firstIntro");
+	  		frame.contentDocument.dispatchEvent(
+	    			new KeyboardEvent('keydown', {key: e.key})
+	  		);
+		});
+
+	}
+        
 	function callSektor(){
 		$( "#info" ).load( "sessions/infoSection.php" );
 		$( "#learn" ).load( "sessions/learnSection.php" );
@@ -21,6 +34,7 @@ $(function() {
 	setTimeout(function(){ 
 		callSektor();
 		reloadContactSektor();
+		focusIframe();
 	}, 1000);
 	
 	
