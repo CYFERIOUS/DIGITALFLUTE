@@ -1,0 +1,58 @@
+
+[
+    {
+        "media": "",
+        "index": "0",
+        "image": "Learn01",
+        "thumb": "../images/thumbnails/nacho.jpg",
+        "name": "Learn01",
+        "description": "Web site and multimedia developed for an antropology investigation group.",
+        "company": "National University of Colombia",
+        "productDescription": "Website developed for anthropology investigation group, this website shows the results of an investigation developed by the group",
+        "technology": "Html 5 - CSS 3 - Javascript"
+    },
+    {
+        "media": "https://www.youtube.com/embed/PEMyCSa8TpU",
+        "index": "1",
+        "image": "Learn02",
+        "thumb": "../images/thumbnails/medicina.jpg",
+        "name": "Learn02",
+        "description": "Multimedia-Game developed for medicine department of military university nueva granada.",
+        "company": "Military University Nueva Granada",
+        "productDescription": "Video Game developed for nutrition campaign, this videogame was located in a cd rom for every student in the school, to learn how to have a better food habits",
+        "technology": "ActionScript"
+    },
+    {
+        "media": "",
+        "index": "2",
+        "image": "Learn03",
+        "thumb": "../images/thumbnails/ecci.jpg",
+        "name": "Learn03",
+        "description": "Virtual object of learning, developed for Ecci university.",
+        "company": "ECCI",
+        "productDescription": "OVA - Virtual Learning Objects, over one year and half we developed 3 OVAS with a lot of tools for managing information about every matter",
+        "technology": "Html 5 - CSS 3 - Javascript - Php"
+    },
+    {
+        "media": "",
+        "index": "3",
+        "image": "Learn04",
+        "thumb": "../images/thumbnails/ecciGame.jpg",
+        "name": "Learn04",
+        "description": "Game-infoGraph, developed for Ecci university.",
+        "company": "ECCI",
+        "productDescription": "Video game developed for campus introduction, was a special requirement just for teach the new students how to locate info in the real website",
+        "technology": "Html 5 - CSS 3 - 2DJavascript"
+    },
+    {
+        "media": "",
+        "index": "4",
+        "image": "Learn05",
+        "thumb": "../images/thumbnails/ccc.jpg",
+        "name": "Learn05",
+        "description": "Virtual object of learning, developed for Colombian council camera.",
+        "company": "Camara Colombiana de la Conciliación",
+        "productDescription": "OVA - Virtual Learning Objects, this OVA was developed by a different special structure due to its matter extension",
+        "technology": "Html 5 - CSS 3 - Javascript"
+    }
+]

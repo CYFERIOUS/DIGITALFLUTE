@@ -1,0 +1,191 @@
+
+[
+    {
+        "media": "https://www.youtube.com/embed/J9BYWicR__0",
+        "index": "0",
+        "image": "Info01",
+        "thumb": "../images/thumbnails/dane.jpg",
+        "name": "Info01",
+        "description": "Video game developed for statistic culture minisite (2018).",
+        "company": "DANE : National Department of Statistics",
+        "productDescription": "Videogame developed for statistic culture campaign against poverty",
+        "technology": "phaser.js, javascript, html5, css3"
+    },
+    {
+        "media": "https://www.youtube.com/embed/7WaD-YVZNgI",
+        "index": "1",
+        "image": "Info02",
+        "thumb": "../images/thumbnails/dane.jpg",
+        "name": "Info02",
+        "description": "dashboard developed for international cooperation bureau (2018)",
+        "company": "DANE : National Department of Statistics",
+		"productDescription":"Dashboard developed with international commissions and cooperation data ",
+		"technology":"Angular1.7 - bootstrap - D3"
+    },
+    {
+        "media": "https://www.youtube.com/embed/uQGAsaWenu4",
+        "index": "2",
+        "image": "Info03",
+        "thumb": "../images/thumbnails/dane.jpg",
+        "name": "Info03",
+        "description": "dashboard developed for national labor demand system  (2017).",
+        "company": "DANE : National Department of Statistics",
+		"productDescription":"Dashboard developed with national labor demand data ",
+		"technology":"Angular1.7 - bootstrap - D3"
+    },
+    {
+        "media": "https://www.youtube.com/embed/NqRcAV7_LWs",
+        "index": "3",
+        "image": "Info04",
+        "thumb": "../images/thumbnails/dane.jpg",
+        "name": "Info04",
+        "description": "dashboard developed for agricultural census (2016).",
+        "company": "DANE : National Department of Statistics",
+		"productDescription":"Dashboard developed with agricultural census data ",
+		"technology":"Angular1.7 - bootstrap - D3"
+    },
+    {
+        "media": "",
+        "index": "4",
+        "image": "Info05",
+        "thumb": "../images/thumbnails/vive.jpg",
+        "name": "Info05",
+        "description": "App developed for this software laboratory for mayoralty office.",
+        "company": "ViveLab-Bogota",
+		"productDescription":"App developed for mayoralty office, this app classify every pub in Bogota DC, and display for client results based on 3 criteria",
+		"technology":"Titanium Studio SDK"
+    },
+    {
+        "media": "",
+        "index": "5",
+        "image": "Info06",
+        "thumb": "../images/thumbnails/vive.jpg",
+        "name": "Info06",
+        "description": "App prototype developed for this software laboratory for mayoralty office.",
+        "company": "ViveLab-Bogota",
+		"productDescription":"App Prototype for event register, initially this app was developed like security app but at least just is a demo and was developed just for events",
+		"technology":"Unity SDK"
+    },
+    {
+        "media": "",
+        "index": "6",
+        "image": "Info07",
+        "thumb": "../images/thumbnails/alpha.jpg",
+        "name": "Info07",
+        "description": "App prototype developed for alpha male web club",
+        "company": "Garden of Eden",
+		"productDescription":"App Prototype developed for Alpha Male Club, this app allow to the suscriber to see all content of the wesite in mobiles",
+		"technology":"Phonegap SDK"
+    },
+    {
+        "media": "",
+        "index": "7",
+        "image": "Info08",
+        "thumb": "../images/thumbnails/ecoprinto.jpg",
+        "name": "Info08",
+        "description": "Web site of big press productions.",
+        "company": "Ecoprints Advertising",
+		"productDescription":"Website developed for large format press company, this website was the online portfolio for this company",
+		"technology":"Html 5 - CSS 3 - Javascript"
+    },
+    {
+        "media": "",
+        "index": "8",
+        "image": "Info09",
+        "thumb": "../images/thumbnails/dispre.jpg",
+        "name": "Info09",
+        "description": "Web site of electronic and electric devices distribution.",
+        "company": "Dispre-elec Electronics",
+		"productDescription":"Website developed for distribution electronic company, this website was the product portfolio",
+		"technology":"Html 5 - CSS 3 - Javascript - ActionScript"
+    },
+    {
+        "media": "https://www.youtube.com/embed/4PV8fdvSQyg",
+        "index": "9",
+        "image": "Info10",
+        "thumb": "../images/thumbnails/ecorinoca.jpg",
+        "name": "Info10",
+        "description": "Mark and website developed.",
+        "company": "Ecorinoquia Sas",
+		"productDescription":"Registred mark and website developed for ambiental company, we accompany this company since the begin of creation of its products",
+		"technology":"Html 5 - CSS 3 - Javascript - ActionScript"
+    },
+    {
+        "media": "https://www.youtube.com/embed/BqUkoFoWnhk",
+        "index": "10",
+        "image": "Info11",
+        "thumb": "../images/thumbnails/sdsrender.jpg",
+        "name": "Info11",
+        "description": "Video render made it for security enterprise.",
+        "company": "Security Data Solutions",
+		"productDescription":"Video render and advertising stuff for security company, renders were developed in maya 3d about architecture of security configurations",
+		"technology":"Maya - AfterEffects"
+    },
+    {
+        "media": "https://www.youtube.com/embed/EYrT72Lqu7s",
+        "index": "11",
+        "image": "Info12",
+        "thumb": "../images/thumbnails/sealed.jpg",
+        "name": "Info12",
+        "description": "Multimedia developed for this company in andina pack fest.",
+        "company": "Sealed Air Cryovac",
+		"productDescription":"Multimedia developed for packaging technologies company, this multimedia was projected on a huge screen to show all catalogue of products in andina pack fair.",
+		"technology":"ActionScript"
+
+    },
+    {
+        "media": "https://www.youtube.com/embed/4mPgGkZhC0k",
+        "index": "12",
+        "image": "Info13",
+        "thumb": "../images/thumbnails/virtuo.jpg",
+        "name": "Info13",
+        "description": "Multimedia and renders made it for this high tech enterprise.",
+        "company": "Virtual Technologies",
+		"productDescription":"Multimedia, website, and advertising stuff for software and hardware company. all renders were ",
+		"technology":"ActionScript"
+    },
+    {
+        "media": "https://www.youtube.com/embed/Fyig9qUH2g4",
+        "index": "13",
+        "image": "Info14",
+        "thumb": "../images/thumbnails/super.jpg",
+        "name": "Info14",
+        "description": "Multimedia made it for this multi-level sells company.",
+        "company": "SuperServi",
+		"productDescription":"Multimedia developed for Business investment company, based on a merchandising net we develope a kind of videogame to illustrate the process",
+		"technology":"ActionScript"
+    },
+    {
+        "media": "https://www.youtube.com/embed/DSQLUpI9WbQ",
+        "index": "14",
+        "image": "Info15",
+        "thumb": "../images/thumbnails/eecta.jpg",
+        "name": "Info15",
+        "description": "Multimedia developed for this urban illumination company.",
+        "company": "Eecta",
+		"productDescription":"Multimedia developed for illumination company, this multimedia illustrate with motion all the demo for an illumination scheme",
+		"technology":"ActionScript"
+    },
+    {
+        "media": "",
+        "index": "15",
+        "image": "Info16",
+        "thumb": "../images/thumbnails/caktos.jpg",
+        "name": "Info16",
+        "description": "Mark made it for software app.",
+        "company": "Kactus HR",
+		"productDescription":"Trade mark developed for human resources software, this logo was a proposal for a company who was developed this HHRR software",
+		"technology":"Gimp"
+    },
+    {
+        "media": "",
+        "index": "16",
+        "image": "Info17",
+        "thumb": "../../images/thumbnails/ferrere.jpg",
+        "name": "Info17",
+        "description": "Mark made it for industrial enterprise.",
+        "company": "Ferrecortes SenCs",
+		"productDescription":"Trade mark developed for iron structures industry, this company use this corporate image all along 10 years since they begin",
+		"technology":"Gimp"
+    }
+]

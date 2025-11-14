@@ -1,0 +1,202 @@
+<main class="main">
+  <mat-card class="tabs-container">
+    <mat-tab-group>
+      <mat-tab label="Information">
+        <div class="tab-content">
+          <h2>Information</h2>
+          <p>Welcome to the admin dashboard. This is the main dashboard tab.</p>
+          
+          @if (isLoadingInformation) {
+            <div class="loading-container">
+              <mat-spinner diameter="50"></mat-spinner>
+              <p>Loading information data...</p>
+            </div>
+          } @else if (informationError) {
+            <mat-card class="error-card">
+              <mat-card-content>
+                <p class="error-message">{{ informationError }}</p>
+                <button mat-button color="primary" (click)="loadInformationData()">
+                  <mat-icon>refresh</mat-icon>
+                  Retry
+                </button>
+              </mat-card-content>
+            </mat-card>
+          } @else if (informationData.length === 0) {
+            <mat-card class="info-card">
+              <mat-card-content>
+                <p>No information data available.</p>
+              </mat-card-content>
+            </mat-card>
+          } @else {
+            <div class="cards-grid">
+              @for (item of informationData; track item.index) {
+                <mat-card class="info-card">
+                  <mat-card-header>
+                    <mat-card-title>{{ item.name }}</mat-card-title>
+                    <mat-card-subtitle>{{ item.company }}</mat-card-subtitle>
+                  </mat-card-header>
+                  @if (item.thumb) {
+                    <img mat-card-image [src]="item.thumb" [alt]="item.name" class="card-image" />
+                  }
+                  <mat-card-content>
+                    <p class="description">{{ item.description }}</p>
+                    @if (item.productDescription) {
+                      <p class="product-description">{{ item.productDescription }}</p>
+                    }
+                    @if (item.technology) {
+                      <p class="technology">
+                        <strong>Technology:</strong> {{ item.technology }}
+                      </p>
+                    }
+                  </mat-card-content>
+                  <mat-card-actions align="end">
+                    <button mat-button color="primary" (click)="onEdit(item)">
+                      <mat-icon>edit</mat-icon>
+                      Edit
+                    </button>
+                    <button mat-button color="warn" (click)="onDelete(item)">
+                      <mat-icon>delete</mat-icon>
+                      Delete
+                    </button>
+                  </mat-card-actions>
+                </mat-card>
+              }
+            </div>
+          }
+        </div>
+      </mat-tab>
+      
+      <mat-tab label="Education">
+        <div class="tab-content">
+          <h2>Education</h2>
+          <p>Configure your application settings here.</p>
+          
+          @if (isLoadingEducation) {
+            <div class="loading-container">
+              <mat-spinner diameter="50"></mat-spinner>
+              <p>Loading education data...</p>
+            </div>
+          } @else if (educationError) {
+            <mat-card class="error-card">
+              <mat-card-content>
+                <p class="error-message">{{ educationError }}</p>
+                <button mat-button color="primary" (click)="loadEducationData()">
+                  <mat-icon>refresh</mat-icon>
+                  Retry
+                </button>
+              </mat-card-content>
+            </mat-card>
+          } @else if (educationData.length === 0) {
+            <mat-card class="info-card">
+              <mat-card-content>
+                <p>No education data available.</p>
+              </mat-card-content>
+            </mat-card>
+          } @else {
+            <div class="cards-grid">
+              @for (item of educationData; track item.index) {
+                <mat-card class="info-card">
+                  <mat-card-header>
+                    <mat-card-title>{{ item.name }}</mat-card-title>
+                    <mat-card-subtitle>{{ item.company }}</mat-card-subtitle>
+                  </mat-card-header>
+                  @if (item.thumb) {
+                    <img mat-card-image [src]="item.thumb" [alt]="item.name" class="card-image" />
+                  }
+                  <mat-card-content>
+                    <p class="description">{{ item.description }}</p>
+                    @if (item.productDescription) {
+                      <p class="product-description">{{ item.productDescription }}</p>
+                    }
+                    @if (item.technology) {
+                      <p class="technology">
+                        <strong>Technology:</strong> {{ item.technology }}
+                      </p>
+                    }
+                  </mat-card-content>
+                  <mat-card-actions align="end">
+                    <button mat-button color="primary" (click)="onEdit(item)">
+                      <mat-icon>edit</mat-icon>
+                      Edit
+                    </button>
+                    <button mat-button color="warn" (click)="onDelete(item)">
+                      <mat-icon>delete</mat-icon>
+                      Delete
+                    </button>
+                  </mat-card-actions>
+                </mat-card>
+              }
+            </div>
+          }
+        </div>
+      </mat-tab>
+      
+      <mat-tab label="Entertainment">
+        <div class="tab-content">
+          <h2>Entertainment</h2>
+          <p>Manage users and their permissions.</p>
+          
+          @if (isLoadingEntertainment) {
+            <div class="loading-container">
+              <mat-spinner diameter="50"></mat-spinner>
+              <p>Loading entertainment data...</p>
+            </div>
+          } @else if (entertainmentError) {
+            <mat-card class="error-card">
+              <mat-card-content>
+                <p class="error-message">{{ entertainmentError }}</p>
+                <button mat-button color="primary" (click)="loadEntertainmentData()">
+                  <mat-icon>refresh</mat-icon>
+                  Retry
+                </button>
+              </mat-card-content>
+            </mat-card>
+          } @else if (entertainmentData.length === 0) {
+            <mat-card class="info-card">
+              <mat-card-content>
+                <p>No entertainment data available.</p>
+              </mat-card-content>
+            </mat-card>
+          } @else {
+            <div class="cards-grid">
+              @for (item of entertainmentData; track item.index) {
+                <mat-card class="info-card">
+                  <mat-card-header>
+                    <mat-card-title>{{ item.name }}</mat-card-title>
+                    <mat-card-subtitle>{{ item.company }}</mat-card-subtitle>
+                  </mat-card-header>
+                  @if (item.thumb) {
+                    <img mat-card-image [src]="item.thumb" [alt]="item.name" class="card-image" />
+                  }
+                  <mat-card-content>
+                    <p class="description">{{ item.description }}</p>
+                    @if (item.productDescription) {
+                      <p class="product-description">{{ item.productDescription }}</p>
+                    }
+                    @if (item.technology) {
+                      <p class="technology">
+                        <strong>Technology:</strong> {{ item.technology }}
+                      </p>
+                    }
+                  </mat-card-content>
+                  <mat-card-actions align="end">
+                    <button mat-button color="primary" (click)="onEdit(item)">
+                      <mat-icon>edit</mat-icon>
+                      Edit
+                    </button>
+                    <button mat-button color="warn" (click)="onDelete(item)">
+                      <mat-icon>delete</mat-icon>
+                      Delete
+                    </button>
+                  </mat-card-actions>
+                </mat-card>
+              }
+            </div>
+          }
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</main>
+
+<router-outlet />

@@ -1,0 +1,78 @@
+[
+    {
+        "media": "",
+        "index": "0",
+        "image": "Fun02",
+        "thumb": "../images/thumbnails/dardo.jpg",
+        "name": "Fun02",
+        "description": "Demo-game of millonaire dart.",
+        "company": "NTC Channel",
+        "productDescription": "Demo - VideoGame based on huge touch screen with Nerf-gun interaction, this video game has an exclusive algorithm that avoid repeat any number",
+        "technology": "ActionScript"
+    },
+    {
+        "media": "",
+        "index": "1",
+        "image": "Fun03",
+        "thumb": "../images/thumbnails/amInhouse.jpg",
+        "name": "Fun03",
+        "description": "Character design. (am in House, Spain).",
+        "company": "Hemega",
+        "productDescription": "Character design developed for a spanish company called imInHouse. this character will acompany children in a touch screen near the cradle",
+        "technology": "Gimp"
+    },
+    {
+        "media": "",
+        "index": "2",
+        "image": "Fun04",
+        "thumb": "../images/thumbnails/cupe.jpg",
+        "name": "Fun04",
+        "description": "Mark developed for medieval clothes. (Cos-play fashion)",
+        "company": "Epica Clothes",
+        "productDescription": "Trademark of medieval clothes, this mark were a proposal for this new company of clothes based on medieval style",
+        "technology": "Gimp"
+    },
+    {
+        "media": "https://www.youtube.com/embed/BEGdrDBN9OQ",
+        "index": "3",
+        "image": "Fun05",
+        "thumb": "../images/thumbnails/cosa1.jpg",
+        "name": "Fun05",
+        "description": "Proposal of video game interface.",
+        "company": "Digital Flute",
+        "productDescription": "Organic videogame interface, this intarface was a proposal for a inner project of videogame",
+        "technology": "ActionScript - Gimp"
+    },
+    {
+        "media": "",
+        "index": "4",
+        "image": "Fun06",
+        "thumb": "../images/thumbnails/hellPuzzle.jpg",
+        "name": "Fun06",
+        "description": "Little video game based on hellraiser movie.",
+        "company": "Digital Flute",
+        "productDescription": "Hellraiser videogame interface this game was a proposal for a inner project of portfolio+videogame",
+        "technology": "ActionScript - Gimp"
+    },
+    {
+        "url": "ilustracion",
+        "index": "5",
+        "thumb": "../images/thumbnails/bizarro.png",
+        "name": "3",
+        "description": "Digital Illustratión portfolio.",
+        "company": "Digital Flute",
+        "productDescription": "Digital Portfolio of NOSSA BROS",
+        "technology": "Skroller and pencils"
+    },
+    {
+        "url": "dimension3",
+        "index": "6",
+        "image": "Fun07",
+        "thumb": "../images/thumbnails/3dscene.jpg",
+        "name": "Fun07",
+        "description": "3D character design portfolio.",
+        "company": "Digital Flute",
+        "productDescription": "3D portfolio",
+        "technology": "Maya, Blender"
+    }
+]

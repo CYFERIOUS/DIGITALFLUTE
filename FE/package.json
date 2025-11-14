@@ -1,0 +1,35 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "\"my personal portfolio\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "ctrl p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CYFERIOUS/DIGITALFULTE.git"
+  },
+  "keywords": [
+    "portfolio",
+    "rules",
+    "digital",
+    "flute"
+  ],
+  "author": "Fernando Nossa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CYFERIOUS/DIGITALFULTE/issues"
+  },
+  "homepage": "https://github.com/CYFERIOUS/DIGITALFULTE",
+  "devDependencies": {
+    "bower": "^1.8.8",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "^11.12.0",
+    "gulp": "^4.0.2",
+    "gulp-v4": "^4.0.0-alpha.5"
+  }
+}

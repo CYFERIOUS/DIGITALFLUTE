@@ -1,0 +1,10 @@
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# Database backups
+*.sql
+*.sqlite
+*.sqlite3
+

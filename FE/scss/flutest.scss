@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'cyberfont';
+ 
+  src: url(../fonts/OCRAEXT.TTF)  format('truetype'), /* Safari, Android, iOS */
+      
+}
+#cubetron{
+	canvas{
+		width: 100% !important;
+		height: 100% !important;
+	}
+	
+}
+
+@mixin big-content($mobileScroll,$infoDetail,$sizeInfo,$footer1,$footer2,$footer3,$contact, $girlW, $girlH){
+	
+	
+			body {
+				margin: 0px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				color: #FFFFFF;
+				padding: 0px;
+				background-color: #FFFFFF;
+				overflow: hidden;
+			
+				.scrollerTittle{
+					display: $mobileScroll;
+				}
+
+			
+				
+				#sektorZero{
+					width:100%; 
+			 		height:60vh;
+					overflow:hidden;
+				}
+				
+				#firstIntro{
+			 		width:100%; 
+			 		height:100%;
+				}
+				
+				#container{
+					background-color:#FFF;
+				}
+				.btnOk {
+					cursor:pointer;
+				}
+				.boxShow{
+					width:920px;
+					height:500px;
+					background-color:#FFF;
+					cursor:pointer;
+					animation:myMove 3s;
+					animation-duration:1s;
+					/* Firefox */
+					-moz-animation:myMove 3s;
+					-moz-animation-duration:1s;
+					/* Safari and Chrome */
+					-webkit-animation:myMove 3s;
+					-webkit-animation-duration:1s;
+					/* Opera */
+					-o-animation:myMove 3s;
+					-o-animation-duration:1s;
+					
+					position: relative;
+    				overflow: hidden;
+    				padding-top: 48vh;
+
+					
+					
+					.media img:hover{
+						cursor: pointer;
+					}
+					.dataDesc{
+						background-color: #012F40;
+						opacity: 0.9;
+						.descriptors{
+							position: relative;
+							display:$infoDetail !important; 
+							color:#03BBFF;
+							font-size:$sizeInfo !important;
+							font-family: "cyberfont";
+							font-weight:200;
+							padding-bottom: 5px;
+						
+						}
+					}
+					
+					
+				
+					a{
+						color: white;
+						font-size:18px;
+						font-weight:bolder;
+
+					}
+					
+					iframe{
+						display: block;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100% !important;
+						height: 100% !important;
+						border: 0;
+
+					}
+					
+				}
+				#contact{
+					display: $contact;
+				}
+				#footer{
+					width: 100%;
+					position: absolute;
+					bottom: 0px;
+					#pie{
+						background-color:#909EAD;
+						width:100%;
+						height:60px;
+						border-style: solid;
+						border-color: #0C95E8 #909EAD #909EAD #909EAD;
+						border-width: 1px;
+						padding: 5px 0 5px 0;
+						#mobileContact{
+							padding-top: 5px;
+							display: $footer1;
+							a{
+								color:#FFF !important;
+								font-size:36px !important;
+								font-weight: bolder;
+							}
+						}
+						#data{
+							display: $footer2;
+							padding-top:20px;
+							padding-left:100px;
+							text-align:left;
+							float:left;
+							width:80%;
+						}
+						#icon{
+							display:$footer3;
+							padding-top:5px;
+						}
+					}
+				}
+				
+				
+					table{
+						background-color:#909EAD;
+						width: 100%;
+					
+
+						tr {
+							display: table-row;
+							vertical-align:middle;
+							border-color: inherit;
+						}
+						td {
+							
+						
+							
+							height: auto;
+							display: table-cell;
+							width: 33%;
+							height: inherit;
+						
+							
+								
+								img {
+									
+									width:  $girlW !important;
+									height: $girlH !important;
+								}
+						
+							
+							input[type=text], select, textarea{
+							  width: 100%;
+							  padding: 2px;
+							  border: 1px solid #ccc;
+							  border-radius: 4px;
+							  box-sizing: border-box;
+							  resize: vertical;
+							}
+						}
+
+					}
+				
+	
+			}
+			@-webkit-keyframes myMove
+			{
+				from {left:950px;}
+				to {left:0px;}
+			}
+
+			/* Standard syntax */
+			@keyframes myMove
+			{
+				from {left:950px;}
+				to {left:0px;}
+			}
+	
+}
+
+
+
+
+
+
