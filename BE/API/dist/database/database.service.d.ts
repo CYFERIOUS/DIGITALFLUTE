@@ -7,8 +7,10 @@ export declare class DatabaseService implements OnModuleInit, OnModuleDestroy {
     onModuleDestroy(): void;
     private initializeDatabase;
     private createTables;
+    private migrateImageThumbToText;
     private populateFromJson;
     repopulateFromJson(): Promise<void>;
+    restoreImageThumbUrls(): Promise<void>;
     getDatabase(): DatabaseInstance;
     getAllInformation(): any[];
     getInformationById(id: number): any;

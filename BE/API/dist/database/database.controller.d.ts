@@ -6,4 +6,8 @@ export declare class DatabaseController {
         message: string;
         success: boolean;
     }>;
+    restoreImages(): Promise<{
+        message: string;
+        success: boolean;
+    }>;
 }

@@ -32,6 +32,21 @@ let DatabaseController = class DatabaseController {
             };
         }
     }
+    async restoreImages() {
+        try {
+            await this.databaseService.restoreImageThumbUrls();
+            return {
+                message: 'Image and thumbnail URLs restored successfully from JSON files',
+                success: true
+            };
+        }
+        catch (error) {
+            return {
+                message: `Error restoring image URLs: ${error.message}`,
+                success: false
+            };
+        }
+    }
 };
 exports.DatabaseController = DatabaseController;
 __decorate([
@@ -40,6 +55,12 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], DatabaseController.prototype, "repopulate", null);
+__decorate([
+    (0, common_1.Post)('restore-images'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", Promise)
+], DatabaseController.prototype, "restoreImages", null);
 exports.DatabaseController = DatabaseController = __decorate([
     (0, common_1.Controller)('database'),
     __metadata("design:paramtypes", [database_service_1.DatabaseService])

@@ -20,5 +20,21 @@ export class DatabaseController {
       };
     }
   }
+
+  @Post('restore-images')
+  async restoreImages(): Promise<{ message: string; success: boolean }> {
+    try {
+      await this.databaseService.restoreImageThumbUrls();
+      return {
+        message: 'Image and thumbnail URLs restored successfully from JSON files',
+        success: true
+      };
+    } catch (error) {
+      return {
+        message: `Error restoring image URLs: ${error.message}`,
+        success: false
+      };
+    }
+  }
 }
 
