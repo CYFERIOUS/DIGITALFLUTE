@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-<script src="../bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="../js/jquery-2.1.0.min.js" type="text/javascript"></script>
 <script src="../js/async.js" type="text/javascript"></script>
 <script src="../js/translate.js" type="text/javascript"></script>
 

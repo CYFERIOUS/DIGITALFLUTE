@@ -10,10 +10,12 @@ import { InformationService } from './services/information.service';
 import { EducationService } from './services/education.service';
 import { EntertainmentService } from './services/entertainment.service';
 import { DataItem } from './models/data-item.model';
+import { AppHeaderComponent } from './header/app-header';
 
 @Component({
   selector: 'app-root',
   imports: [
+    AppHeaderComponent,
     RouterOutlet,
     CommonModule,
     MatTabsModule,

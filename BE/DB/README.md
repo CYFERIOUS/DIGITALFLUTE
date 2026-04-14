@@ -1,53 +1,58 @@
-# SQLite Database Setup
+# Digital Flute database (SQLite)
 
-This directory contains the SQLite database file (`digitalflute.db`) for the Digital Flute backend API.
+This folder holds the SQLite file used by the Nest API: **`digitalflute.db`**.
 
-## Database Structure
+The database file is **not committed** (see `.gitignore`). After cloning the repo, create and fill it using the steps below.
 
-The database contains three main tables:
+## Prerequisites
 
-### 1. Information Table
-Stores information/project data.
+- Node.js and npm
+- Dependencies installed for the API (the populate script runs from `BE/API`)
 
-### 2. Education Table
-Stores education-related project data.
+## Populate the database after install
 
-### 3. Entertainment Table
-Stores entertainment/game project data.
+1. Open a terminal at the **API** package (from the repository root):
 
-## Schema
+   ```bash
+   cd BE/API
+   ```
 
-All three tables have the same structure:
+2. Install dependencies if you have not already:
 
-- `id` - INTEGER PRIMARY KEY AUTOINCREMENT
-- `media` - TEXT (YouTube embed URL or media link)
-- `index_value` - TEXT (original index from JSON)
-- `image` - TEXT (image identifier)
-- `thumb` - TEXT (thumbnail path)
-- `name` - TEXT NOT NULL (project name)
-- `description` - TEXT (short description)
-- `company` - TEXT (company/client name)
-- `productDescription` - TEXT (detailed product description)
-- `technology` - TEXT (technologies used)
-- `created_at` - DATETIME (auto-generated timestamp)
-- `updated_at` - DATETIME (auto-generated timestamp)
+   ```bash
+   npm install
+   ```
 
-## Initialization
+3. Run the population script. It creates `../DB/digitalflute.db` (if needed), applies the schema, and loads rows from the default seed JSON files:
 
-The database is automatically initialized when the NestJS application starts:
+   ```bash
+   npm run populate:db
+   ```
 
-1. Tables are created if they don't exist
-2. Data is populated from JSON files (`info.json`, `edu.json`, `fun.json`) if tables are empty
-3. The database file is created at `BE/DB/digitalflute.db`
+Seed data is read from:
 
-## Usage
+- `FE/js/info.json` → `information` table  
+- `FE/js/edu.json` → `education` table  
+- `FE/js/fun.json` → `entertainment` table  
 
-The database is accessed through the `DatabaseService` in `API/src/database/database.service.ts`.
+4. Start the API as usual (`npm run start` or `npm run start:dev`). On first startup, if the tables are **empty**, the service will also try to load from those same JSON paths; running `populate:db` explicitly is still recommended so you have a known-good database immediately.
 
-## Notes
+## Optional: reset data from JSON again
 
-- The database file is created automatically on first run
-- Data is only populated if tables are empty (prevents duplicate entries)
-- The `index_value` field stores the original `index` from JSON files
-- All timestamps are automatically managed by SQLite
+With the API running and the backend reachable:
 
+- `POST http://localhost:5000/database/repopulate`  
+  Clears the three content tables and reloads them from `FE/js/*.json`.
+
+Or run `npm run populate:db` again from `BE/API` (it clears and re-inserts when invoked).
+
+## Optional: save the current DB back to repository seed files
+
+After editing data in the database (or via the admin app), you can write the tables back to `FE/js` so the repo default stays in sync:
+
+```bash
+cd BE/API
+npm run export:db-json
+```
+
+That updates `FE/js/info.json`, `edu.json`, and `fun.json` from the current `digitalflute.db`.

@@ -277,6 +277,9 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
       for (const { table, file } of jsonMappings) {
         // Try multiple paths to find JSON files
         const possiblePaths = [
+          // Canonical seed data checked in with the frontend
+          path.resolve(process.cwd(), '..', '..', 'FE', 'js', file),
+          path.resolve(process.cwd(), 'FE', 'js', file),
           path.join(process.cwd(), 'src', 'data', file),
           path.join(process.cwd(), 'dist', 'data', file),
           path.join(__dirname, '..', 'data', file),

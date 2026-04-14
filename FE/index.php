@@ -23,7 +23,7 @@
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 
 
-<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery-2.1.0.min.js" type="text/javascript"></script>
 <script src="js/async.js" type="text/javascript"></script>
 
 <!--ACORDION-->

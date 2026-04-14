@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<script src="../bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="../js/jquery-2.1.0.min.js" type="text/javascript"></script>
 <script src="../js/async.js" type="text/javascript"></script>
 <script src="../js/translate.js" type="text/javascript"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

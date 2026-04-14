@@ -1,0 +1,36 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 1rem;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: var(--mat-sys-surface-container);
+  border: 1px solid var(--mat-sys-outline-variant);
+}
+
+.app-header__image {
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.app-header__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 0;
+}
+
+.app-header__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--mat-sys-on-surface);
+}
+
+.app-header__subtitle {
+  font-size: 0.875rem;
+  color: var(--mat-sys-on-surface-variant);
+}

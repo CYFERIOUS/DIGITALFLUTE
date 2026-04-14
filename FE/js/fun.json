@@ -55,8 +55,9 @@
         "technology": "ActionScript - Gimp"
     },
     {
-        "url": "ilustracion",
+        "media": "",
         "index": "5",
+        "image": "",
         "thumb": "../images/thumbnails/bizarro.png",
         "name": "3",
         "description": "Digital Illustratión portfolio.",
@@ -65,7 +66,7 @@
         "technology": "Skroller and pencils"
     },
     {
-        "url": "dimension3",
+        "media": "",
         "index": "6",
         "image": "Fun07",
         "thumb": "../images/thumbnails/3dscene.jpg",
