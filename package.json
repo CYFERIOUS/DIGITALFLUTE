@@ -24,8 +24,11 @@
   "homepage": "https://github.com/CYFERIOUS/DIGITALFULTE",
   "devDependencies": {
     "bower": "^1.8.8",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-v4": "^4.0.0-alpha.5"
+  }
 }

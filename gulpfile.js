@@ -1,10 +1,10 @@
 
 // Include gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 
 // Include Our Plugins
 
-var sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 
 // Compile Our Sass
 gulp.task('sass', () =>  {

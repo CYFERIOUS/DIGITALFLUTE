@@ -17,7 +17,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:image" content="http://www.dgflute.com/images/thumbnails/unitedCyberPunks.png" />
 
-<link rel="SHORCUT ICON" href = "mozart.ico"type="image/x-icon"/> 
+<link rel="SHORCUT ICON" href = "mozart.ico"type="image/x-icon"/>
 
 
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -28,8 +28,21 @@
 
 <!--ACORDION-->
 <script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+
+//google analytics
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HDVP5KYBQD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HDVP5KYBQD');
+</script>
+
+
 </head>
-	
+
 <body>
 	<div id="bigPapaLoader">
   <div id="curtain">
@@ -44,7 +57,7 @@
 	<div id="Accordion1" class="Accordion" tabindex="0">
 		<div class="AccordionPanel">
 			<div class="AccordionPanelspecialTab">DIE ZAUBERFLÖTE</div>
-			<div class="AccordionPanelspecialContent" id="sektorZero"><iframe  id="firstIntro" src="sessions/intro/index.html"  scrolling="no" frameborder="0" ></iframe></div>
+			<div class="AccordionPanelspecialContent" id="sektorZero"><iframe  id="firstIntro"  src="sessions/intro/index.html"  scrolling="no" frameborder="0" ></iframe></div>
 		</div>
 
 		<div class="AccordionPanel" >
