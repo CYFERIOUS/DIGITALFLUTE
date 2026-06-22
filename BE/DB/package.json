@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "SQLite database module for Digital Flute backend",
   "private": true,
+  "scripts": {
+    "chartdb:json": "node chartdb/generate-import.mjs"
+  },
   "dependencies": {
     "better-sqlite3": "^11.7.0"
   },

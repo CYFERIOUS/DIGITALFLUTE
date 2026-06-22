@@ -56,3 +56,40 @@ npm run export:db-json
 ```
 
 That updates `FE/js/info.json`, `edu.json`, and `fun.json` from the current `digitalflute.db`.
+
+## ChartDB (schema diagram)
+
+[ChartDB](https://chartdb.io) can visualize this SQLite schema using **database metadata** JSON (the same shape as ChartDB’s SQLite “Smart Query” result).
+
+**Do not use ChartDB’s “Import diagram”** for this file. That action expects a **saved diagram** export (tables with x/y positions, diagram `id`, etc.). Our file is **metadata** for **Import database → SQLite → Query** (paste JSON). See `chartdb/README.md` for step-by-step instructions and troubleshooting.
+
+This repo includes:
+
+| File | Purpose |
+|------|---------|
+| `chartdb/sqlite-metadata-query.sql` | ChartDB’s standard SQLite metadata query (from [chartdb/chartdb](https://github.com/chartdb/chartdb)). |
+| `chartdb/chartdb-sqlite-metadata.json` | **Generated** metadata JSON for the current `digitalflute.db`. Commit when the schema changes. |
+| `chartdb/generate-import.mjs` | Regenerates that JSON using `better-sqlite3`. |
+
+### Regenerate the ChartDB metadata file
+
+After `digitalflute.db` exists (see **Populate the database** above), from **`BE/DB`**:
+
+```bash
+npm install
+npm run chartdb:json
+```
+
+This overwrites `chartdb/chartdb-sqlite-metadata.json`.
+
+### Open in ChartDB
+
+1. [app.chartdb.io](https://app.chartdb.io) → **Import database** (not “Import diagram”).
+2. Database type: **SQLite** → import method: **Query**.
+3. Paste the full contents of `chartdb/chartdb-sqlite-metadata.json`.
+
+Alternatively, run `chartdb/sqlite-metadata-query.sql` in the `sqlite3` CLI against `digitalflute.db` and paste the query’s JSON result (see [ChartDB README](https://github.com/chartdb/chartdb#try-it-on-our-website)).
+
+### Schema overview (Digital Flute)
+
+- **`information`**, **`education`**, **`entertainment`**: same column layout — portfolio items keyed by auto-increment `id`, with `index_value` used as the display order key in the API (`index` in JSON). No foreign keys between tables. SQLite’s internal **`sqlite_sequence`** table may appear after inserts with `AUTOINCREMENT`.

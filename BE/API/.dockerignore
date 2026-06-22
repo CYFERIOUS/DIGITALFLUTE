@@ -1,0 +1,23 @@
+# VCS / editor
+**/.git
+**/.gitignore
+**/.vscode
+**/.idea
+
+# Node / build artifacts
+**/node_modules
+**/dist
+**/coverage
+**/.angular
+**/npm_log.txt
+**/npm-debug.log*
+
+# SQLite data (never bake the DB into the image; it's a volume)
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+# Docker meta
+**/Dockerfile
+**/.dockerignore
+docker-compose*.yml

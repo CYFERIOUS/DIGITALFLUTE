@@ -245,6 +245,8 @@ let DatabaseService = class DatabaseService {
             ];
             for (const { table, file } of jsonMappings) {
                 const possiblePaths = [
+                    path.resolve(process.cwd(), '..', '..', 'FE', 'js', file),
+                    path.resolve(process.cwd(), 'FE', 'js', file),
                     path.join(process.cwd(), 'src', 'data', file),
                     path.join(process.cwd(), 'dist', 'data', file),
                     path.join(__dirname, '..', 'data', file),

@@ -34,7 +34,10 @@ gulp.task('sassAcordion', () => {
 
 // Watch Files For Changes
 gulp.task('watch', () => {
-    gulp.watch('scss/*.scss','sections/ilustre/ferchoFolio/scss/*.scss'['sass','sassAcordion','sassIlustre','chinoPopo']);
+    gulp.watch(
+        ['scss/*.scss', 'sections/ilustre/ferchoFolio/scss/*.scss'],
+        gulp.parallel('sass', 'sassAcordion', 'sassIlustre', 'chinoPopo')
+    );
 });
 
 // Default Task

@@ -26,7 +26,8 @@
  	<div class="scrollerTittle"><a>Scroll and click image to see info</a></div>
 	  	
       <?php
-        $apiUrl = 'http://localhost:5000/info';
+        $apiBase = getenv('API_BASE_URL') ?: 'http://localhost:5000';
+        $apiUrl = rtrim($apiBase, '/') . '/info';
         
         // Try cURL first (more reliable), fallback to file_get_contents
         if (function_exists('curl_init')) {

@@ -1,0 +1,21 @@
+services:
+  api:
+    build:
+      context: .                 # repo root, so Dockerfile can see BE/API + FE/js
+      dockerfile: BE/API/Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - dbdata:/app/BE/DB        # persist digitalflute.db
+  fe:
+    build:
+      context: ./FE              # FE-only context
+    ports:
+      - "80:80"
+    environment:
+      - API_BASE_URL=http://api:5000
+    depends_on:
+      - api
+
+volumes:
+  dbdata:

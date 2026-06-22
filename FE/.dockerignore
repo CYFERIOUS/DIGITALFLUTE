@@ -1,0 +1,19 @@
+# Front-end build tooling not needed to *serve* the PHP site
+node_modules
+bower_components
+.sass-cache
+.cache
+
+# VCS / editor
+.git
+.gitignore
+.vscode
+
+# SQLite (shouldn't be here, but just in case)
+*.db
+*.db-shm
+*.db-wal
+
+# Docker meta
+Dockerfile
+.dockerignore
